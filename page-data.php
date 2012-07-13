@@ -17,10 +17,10 @@ get_header(); ?>
 				<?php
 				$packages = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM data_packages;" ), ARRAY_A ); 
 				?>
-				<div class="entry-content"><?php
+				<div class="entry-content data-packages"><?php
 				foreach ($packages as $k => $v) {
-					print '<h1><a href="http://thedatahub.org/package/' . $v['package_name'] . '">' . $v['package_name'] . "</a></h1>\n";
-					print $v['package_notes'];
+					print '<div class="data-package-title"><h1><i>Package name:</i> <a href="http://thedatahub.org/package/' . $v['package_name'] . '">' . $v['package_name'] . "</a></h1></div>\n";
+					print '<div class="data-package-body">' . $v['package_notes'] . '<br />&nbsp;</div>';
 				}
 				?>
 				</div>

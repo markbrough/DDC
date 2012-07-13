@@ -13,7 +13,7 @@
  */
 ?>
 
-			<div id="comments">
+			<div id="comments" class="question-comments">
 <?php if ( post_password_required() ) : ?>
 				<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'twentyten' ); ?></p>
 			</div><!-- #comments -->
@@ -77,7 +77,7 @@
 <?php
 $comments_args = array(
         // change the title of send button 
-        'title_reply'=>'Add your question',
+        'title_reply'=>'Add your question here.',
         // remove "Text or HTML to be displayed after the set of comment fields"
         'title_reply_to' => 'Add a response to %s',
 	'label_submit' => 'Submit question',

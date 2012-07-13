@@ -1886,6 +1886,16 @@ section.ephemera .entry-title a span {
 /* =Comments
 ----------------------------------------------- */
 
+.post-9 {
+	float:left;
+	width:55%;
+}
+
+.question-comments {
+	float:right;
+	width:40%;
+}
+
 #comments-title {
 	color: #666;
 	font-size: 10px;
@@ -2691,3 +2701,8 @@ p.comment-form-comment {
 	margin-right: 7.6%;
 }
 
+/* Data packages */
+
+.data-package-title h1 {
+	font-size: 20px;
+}
