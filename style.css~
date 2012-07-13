@@ -2704,5 +2704,5 @@ p.comment-form-comment {
 /* Data packages */
 
 .data-package-title h1 {
-	font-size: 16px;
+	font-size: 20px;
 }
