@@ -9,7 +9,12 @@ License URI: license.txt
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
-
+@font-face {
+    font-family: "League Gothic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("images/League_Gothic.otf") format("opentype"), url("images/League_Gothic-webfont.eot?#iefix") format("embedded-opentype"), url("images/League_Gothic-webfont.woff") format("woff"), url("images/League_Gothic-webfont.svg") format("svg");
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,7 +37,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline: 0;
 }
 body {
-	background: #fff;
+	background: #ffffff;
 	line-height: 1;
 }
 ol, ul {
@@ -71,6 +76,7 @@ body {
 #page {
 	margin: 0 auto;
 	max-width: 1000px;
+	background-color: #F0F0F0;
 }
 #branding hgroup {
 	margin: 0 10px;
@@ -311,22 +317,23 @@ body {
 ----------------------------------------------- */
 
 body, input, textarea {
-	color: #373737;
-	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000000;
+	font: 18px "Helvetica", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	line-height: 1.625;
 }
 body {
-	background: #e2e2e2;
+	background: #ffffff;
 }
 #page {
-	background: #fff;
+	background: #F0F0F0;
 }
 
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
 	clear: both;
 }
+
 hr {
 	background-color: #ccc;
 	border: 0;
@@ -453,6 +460,7 @@ input[type=text] {
 input#s {
 	background: url(images/search.png) no-repeat 5px 6px;
 	-moz-border-radius: 2px;
+	background-color:#ffffff;
 	border-radius: 2px;
 	font-size: 14px;
 	height: 22px;
@@ -498,10 +506,13 @@ a:hover {
 ----------------------------------------------- */
 
 #branding {
-	border-top: 2px solid #bbb;
 	padding-bottom: 10px;
 	position: relative;
 	z-index: 9999;
+	background-color: #95A8B7;
+	background-image:url('http://developmentdatachallenge.org/wp-content/uploads/2012/07/gears1.png');
+	background-position: right top;
+	background-repeat: no-repeat;
 }
 #site-title {
 	margin-right: 270px;
@@ -530,11 +541,7 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-	background: #222; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#252525, #0a0a0a);
-	background: -o-linear-gradient(#252525, #0a0a0a);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#252525, #0a0a0a);
+	background: #0F3C63;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
@@ -555,11 +562,13 @@ a:hover {
 	position: relative;
 }
 #access a {
-	color: #eee;
+	color: #ffffff;
 	display: block;
-	line-height: 3.333em;
-	padding: 0 1.2125em;
+	line-height: 2em;
+	padding: 0 10px 0 10px;
 	text-decoration: none;
+	font-family:"League Gothic", Helvetica;
+	font-size: 25px;
 }
 #access ul ul {
 	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -591,11 +600,14 @@ a:hover {
 }
 #access li:hover > a,
 #access ul ul :hover > a,
-#access a:focus {
+#access a:focus,
+#access li.current_page_item {
 	background: #efefef;
 }
 #access li:hover > a,
-#access a:focus {
+#access a:focus,
+#access li.current_page_item,
+#access li.current_page_item a {
 	background: #f9f9f9; /* Show a solid color for older browsers */
 	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
 	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
@@ -610,7 +622,7 @@ a:hover {
 #access .current-menu-ancestor > a,
 #access .current_page_item > a,
 #access .current_page_ancestor > a {
-	font-weight: bold;
+	font-weight: normal;
 }
 
 /* Search Form */
@@ -1085,12 +1097,17 @@ article.format-status .entry-content {
 .singular .entry-title {
 	color: #000;
 	font-size: 36px;
-	font-weight: bold;
+	font-weight: normal;
 	line-height: 48px;
 }
 .singular .entry-title,
 .singular .entry-header .entry-meta {
 	padding-right: 0;
+	color: #0F3C63;
+	font-weight:normal;
+    	font-family: "League Gothic", Helvetica;
+	font-size: 70px;
+	line-height: 80px;
 }
 .singular .entry-header .entry-meta {
 	position: absolute;
@@ -2672,3 +2689,4 @@ p.comment-form-comment {
 #ie7 section.recent-posts {
 	margin-right: 7.6%;
 }
+
