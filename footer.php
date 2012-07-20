@@ -24,7 +24,7 @@
 
 			<div id="site-generator">
 				<p><b>Development Data Challenge is an Initiative of:</b></p>
-				<p><a href="http://www.aidinfo.org">Aidinfo</a> | <a href="http://www.guardian.co.uk/global-development">The Guardian</a> | <a href="http://www.openaidregister.org">Open Aid Register</a> | <a href="http://www.okfn.org">Open Knowledge Foundation</a> | <a href="http://www.publishwhatyoufund.org">Publish What You Fund</a> | <a href="http://finances.worldbank.org">World Bank Finances</a></p>
+				<p><a href="http://www.aidinfo.org">Aidinfo</a> | <a href="http://www.dfid.gov.uk">DFID</a> | <a href="http://www.guardian.co.uk/global-development">The Guardian</a> | <a href="http://www.openaidregister.org">Open Aid Register</a> | <a href="http://www.okfn.org">Open Knowledge Foundation</a> | <a href="http://www.publishwhatyoufund.org">Publish What You Fund</a> | <a href="http://www.sida.se">SIDA</a> | <a href="http://finances.worldbank.org">World Bank Finances</a></p>
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
