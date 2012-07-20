@@ -71,11 +71,12 @@ footer, header, hgroup, menu, nav, section {
 ----------------------------------------------- */
 
 body {
-	padding: 0 2em;
+/*	padding: 0 2em;*/
 }
 #page {
 	margin: 0 auto;
-	max-width: 1000px;
+	width: 100%;
+	min-width:650px !important;
 	background-color: #F0F0F0;
 }
 #branding hgroup {
@@ -2529,7 +2530,7 @@ p.comment-form-comment {
 		clear: both !important;
 		display: block !important;
 		float: none !important;
-		min-width: 900px;
+		width: 100%;
 		position: relative !important;
 	}
 	#branding {

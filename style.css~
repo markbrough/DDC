@@ -75,7 +75,7 @@ body {
 }
 #page {
 	margin: 0 auto;
-	max-width: 1000px;
+	width: 100%;
 	background-color: #F0F0F0;
 }
 #branding hgroup {
@@ -2529,7 +2529,7 @@ p.comment-form-comment {
 		clear: both !important;
 		display: block !important;
 		float: none !important;
-		max-width: 100%;
+		width: 100%;
 		position: relative !important;
 	}
 	#branding {
