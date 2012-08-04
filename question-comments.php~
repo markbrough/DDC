@@ -51,7 +51,7 @@
 					 * define twentyten_comment() and that will be used instead.
 					 * See twentyten_comment() in twentyten/functions.php for more.
 					 */
-					wp_list_comments( array( 'callback' => 'twentyten_comment' ) );
+					wp_list_comments( array( 'callback' => 'twentyeleven_comment' ) );
 				?>
 			</ol>
 
@@ -77,7 +77,7 @@
 <?php
 $comments_args = array(
         // change the title of send button 
-        'title_reply'=>'Add your question',
+        'title_reply'=>'Add your question here.',
         // remove "Text or HTML to be displayed after the set of comment fields"
         'title_reply_to' => 'Add a response to %s',
 	'label_submit' => 'Submit question',
