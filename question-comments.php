@@ -14,6 +14,21 @@
 ?>
 
 			<div id="comments" class="question-comments">
+
+<?php
+$comments_args = array(
+        // change the title of send button 
+        'title_reply'=>'Add your question here.',
+        // remove "Text or HTML to be displayed after the set of comment fields"
+        'title_reply_to' => 'Add a response to %s',
+	'label_submit' => 'Submit question',
+	'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Question', 'noun' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
+	'comment_notes_before' => '<p class="comment-notes">' . __( 'Please add your question below. Providing your name and email address will allow us to get in touch with you in case there is a need for any clarification about your question. Your email address will not be published.' ) . ( $req ? $required_text : '' ) . '</p>',
+);
+
+comment_form($comments_args);
+?>
+
 <?php if ( post_password_required() ) : ?>
 				<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'twentyten' ); ?></p>
 			</div><!-- #comments -->
@@ -73,19 +88,5 @@
 <?php endif; // end ! comments_open() ?>
 
 <?php endif; // end have_comments() ?>
-
-<?php
-$comments_args = array(
-        // change the title of send button 
-        'title_reply'=>'Add your question here.',
-        // remove "Text or HTML to be displayed after the set of comment fields"
-        'title_reply_to' => 'Add a response to %s',
-	'label_submit' => 'Submit question',
-	'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Question', 'noun' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
-	'comment_notes_before' => '<p class="comment-notes">' . __( 'Please add your question below. Providing your name and email address will allow us to get in touch with you in case there is a need for any clarification about your question. Your email address will not be published.' ) . ( $req ? $required_text : '' ) . '</p>',
-);
-
-comment_form($comments_args);
-?>
 
 </div><!-- #comments -->
